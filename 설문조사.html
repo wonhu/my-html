@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+    <title>설문 조사</title>
+    <style></style>
+</head>
+<html>
+    <body>
+    <script>
+        var where,beach,mountain,art,city,drive,cafe;
+        where = prompt("어떤 여행지를 원하시나요? 아래 항목에서 골라주세요.\n1. 해변\n2. 산 \n3. 미술관 \n4. 도시 \n5. 드라이브\n6. 카페\n예시) 해변"); 
+        if(where == "해변")
+        {
+            beach = prompt("어떤 해변을 좋아하시나요?\n1. 몽돌 해변\n2. 모래 해변\n3. 에메랄드 빛 해변\n4. 캠핑하기 좋은 해변\n5. 분위기 좋은 해변");
+            if(beach =="몽돌 해변")
+            {
+                location.href="몽돌해변.html";
+            }
+            else if(beach =="모래 해변")
+            {
+                location.href="모래해변.html";
+            }
+            else if (beach =="에메랄드 빛 해변")
+            {
+                location.href="에메랄드빛해변.html";
+            }
+            else if (beach == "캠핑하기 좋은 해변")
+            {
+                location.href="캠핑하기좋은해변.html";
+            }
+            
+            else if (beach =="분위기 좋은 해변")
+            {
+                location.href="분위기좋은해변.html";
+            }
+            else 
+            {
+                document.write("잘못된 서식입니다.");
+            }
+        }
+        else if(where == "산")
+        {
+            mountain = prompt("어떤 산을 좋아하시나요?\n1. 운동하기 좋은 산\n2. 경치 좋은 산\n3. 만년설이 있는 산\n4. 비교적 낮은 산\n5. 사람들이 많이 찾는 산");
+            if(mountain =="운동하기 좋은 산")
+            {
+                location.href="운동하기좋은산.html";
+            }
+            else if (mountain =="경치 좋은 산")
+            {
+                location.href="경치좋은산.html";
+            }
+            else if (mountain == "만년설이 있는 산")
+            {
+                location.href="만년설이있는산.html";
+            }
+            else if (mountain == "비교적 낮은 산")
+            {
+                location.href="비교적낮은산.html";
+            }
+            else if (mountain == "사람들이 많이 찾는 산")
+            {
+                location.href="사람들이많이찾는산.html";
+            }
+            else
+            {
+                document.write("잘못된 서식입니다.");
+            }
+        }
+        else if (where =="미술관"){
+            art = prompt("어떤 미술관을 좋아하시나요?\n1. 역사적인 미술관\n2. 흥미로운 미술관\n3. 잘 알려진 미술관\n4. 아이들을 위한 미술관\n5. 잘 알려지지 않은 미술관");
+            if(art == "역사적인 미술관")
+            {
+                location.href="역사적인미술관.html";
+            }
+            else if(art == "흥미로운 미술관")
+            {
+                location.href="흥미로운미술관.html";
+            }
+            else if (art == "잘 알려진 미술관")
+            {
+                location.href="잘알려진미술관.html";
+            }
+            else if (art == "아이들을 위한 미술관")
+            {
+                location.href="아이들을위한미술관.html";
+            }
+            else if (art =="잘 알려지지 않은 미술관")
+            {
+                location.href="잘알려지지않은미술관.html";
+            }
+            else
+            {
+                document.write("잘못된 서식입니다.");
+            }
+        }
+        else if(where =="도시")
+            {
+                city = prompt("어떤 도시를 좋아하시나요?\n1. 사람들이 붐비는 도시\n2. 놀러다닐 곳이 많은 도시\n3. 많이 발전한 도시\n4. 야경이 예쁜 도시");
+                if(city =="사람들이 붐비는 도시")
+                {
+                    location.href="사람들이붐비는도시.html";
+                }
+                else if (city =="놀러다닐 곳이 많은 도시")
+                {
+                    location.href="놀러다닐곳이많은도시.html";
+                }
+                else if (city =="많이 발전한 도시")
+                {
+                    location.href="많이발전한도시.html";
+                }
+                else if (city =="야경이 예쁜 도시")
+                {
+                    location.href="야경이예쁜도시.html";
+                }
+                else
+                {
+                    document.write("잘못된 서식입니다.");
+                }
+            }
+        else if (where == "드라이브")
+            {
+                drive = prompt("어떤 곳으로 드라이브 하기를 원하시나요?\n1. 해안선 드라이브\n2. 야경 드라이브\n3. 자연 드라이브");
+                if(drive == "해안선 드라이브")
+                {
+                    location.href="해안선드라이브.html";
+                }
+                else if (drive == "야경 드라이브")
+                {
+                    location.href="야경드라이브.html";
+                }
+                else if (drive =="자연 드라이브")
+                {
+                    location.href="자연드라이브.html";
+                }
+                else
+                {
+                    document.write("잘못된 서식입니다.");
+                }
+            }
+        else if (where == "카페")
+        {
+            cafe = prompt("어떤 카페를 좋아하시나요?\n1. 분위기 있는 카페\n2. 유명한 카페\n3. 신기한 카페\n4. 오션뷰 카페");
+            if(cafe =="분위기 있는 카페")
+            {
+                location.href="분위기있는카페.html";
+            }
+            else if (cafe =="유명한 카페")
+            {
+                location.href="유명한카페.html";
+            }
+            else if (cafe == "신기한 카페")
+            {
+                location.href="신기한카페.html";
+            }
+            else if (cafe == "오션뷰 카페")
+            {
+                location.href="오션뷰카페.html";
+            }
+            else 
+            {
+                document.write("잘못된 서식입니다.");
+            }
+        }
+        else
+        {
+            document.write("잘못된 서식입니다.");
+        }
+        
+                        
+                        
+                        
+                       
+                    
+        
+        
+    </script>
+    </body>
+</html>
